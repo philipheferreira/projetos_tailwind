@@ -1,0 +1,78 @@
+Todas as formas de adicionar o Tailwind nesse documento estão definidas na documentação online: https://tailwindcss.com/docs/installation/tailwind-cli
+
+
+* Usando Tailwind CLI:
+
+1 - Usar comando para instalar o Tailwind CSS
+
+* npm install tailwindcss @tailwindcss/cli
+
+2 - Importar o Tailwind no CSS:
+
+* @import "tailwindcss";
+
+3 - Começar o processo do CLI build:
+
+* npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+
+4 - começar a usar no HTML
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+</body>
+</html>
+
+
+
+* Usando a chamada direta no arquivo HTML:
+
+1 - adicionar para usar o CDN script direto no arquivo HTML:
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+  </body>
+</html>
+
+
+* Usando a chamada direta no arquivo HTML:
+
+1 - adicionar para usar o CDN script direto no arquivo CSS:
+
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold underline text-clifford">
+      Hello world!
+    </h1>
+  </body>
+</html>
+
