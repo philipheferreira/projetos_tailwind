@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="p-24 bg-purple-900 flex flex-col justify-center items-center">
+       <!-- title -->
+       <h2 class="pb-10 font-bold text-6xl text-purple-200 text-center">Buttons with Tailwind CSS</h2>
+    </div>
+
+    <div class="p-24 bg-purple-300 flex flex-col justify-center items-center">
+       <h3 class="pb-10 font-bold text-4xl text-purple-700">Button Tags</h3>
+
+       <!-- button tags; info button bootstrap color teal is swapped out for simplicity; extra step will be added for color customizations -->
+       <div class="flex space-x-2 space-y-2 flex-wrap justify-center items-baseline">
+          <button class="rounded-lg px-4 py-2 bg-blue-500 text-blue-100 hover:bg-blue-600 duration-300">Primary</button>
+          <button class="rounded-lg px-4 py-2 bg-gray-600 text-gray-100 hover:bg-gray-700 duration-300">Secondary</button>
+          <button class="rounded-lg px-4 py-2 bg-green-700 text-green-100 hover:bg-green-800 duration-300">Success</button>
+          <button class="rounded-lg px-4 py-2 bg-red-600 text-red-100 hover:bg-red-700 duration-300">Danger</button>
+          <button class="rounded-lg px-4 py-2 bg-yellow-500 hover:bg-yellow-600 duration-300">Warning</button>
+          <button class="rounded-lg px-4 py-2 bg-green-300 hover:bg-green-400 duration-300">Info</button>
+          <button class="rounded-lg px-4 py-2 bg-gray-200 hover:bg-gray-300 duration-300">Light</button>
+          <button class="rounded-lg px-4 py-2 bg-gray-900 text-gray-100">Dark</button>
+          <button class="rounded-lg px-4 py-2 underline text-blue-500 hover:text-blue-600 duration-300">Link</button>
+       </div>
+    </div>
+
+    <div class="p-24 bg-purple-50 flex flex-col justify-center items-center">
+       <h3 class="pb-10 font-bold text-4xl text-purple-700">Outline Buttons</h3>
+
+       <!-- outline buttons; info button bootstrap color teal is swapped out for simplicity; extra step will be added for color customizations -->
+       <div class="flex space-x-2 space-y-2 flex-wrap justify-center items-baseline">
+          <button class="rounded-lg px-4 py-2 border-2 border-blue-500 text-blue-500 hover:bg-blue-600 hover:text-blue-100 duration-300">Primary</button>
+          <button class="rounded-lg px-4 py-2 border-2 border-gray-600 text-gray-600 hover:bg-gray-600 hover:text-gray-100 duration-300">Secondary</button>
+          <button class="rounded-lg px-4 py-2 border-2 border-green-700 text-green-700 hover:bg-green-700 hover:text-green-100 duration-300">Success</button>
+          <button class="rounded-lg px-4 py-2 border-2 border-red-600 text-red-600 hover:bg-red-600 hover:text-red-100 duration-300">Danger</button>
+          <button class="rounded-lg px-4 py-2 border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-yellow-100 duration-300">Warning</button>
+          <button class="rounded-lg px-4 py-2 border-2 border-green-300 text-green-300 hover:bg-green-300 hover:text-green-100 duration-300">Info</button>
+          <button class="rounded-lg px-4 py-2 border-2 border-gray-200 text-gray-200 hover:bg-gray-200 hover:text-gray-900 duration-300">Light</button>
+          <button class="rounded-lg px-4 py-2 border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-gray-100 duration-300">Dark</button>
+          <button class="rounded-lg px-4 py-2 underline text-blue-500 ">Link</button>
+       </div>
+    </div>
+
+    <div class="p-24 bg-purple-200 flex flex-col justify-center items-center">
+       <h3 class="pb-10 font-bold text-4xl text-purple-700">Button Sizes</h3>
+
+       <!-- button sizes -->
+       <div class="flex flex-wrap justify-center items-baseline">
+
+          <!-- large button -->
+          <div class="px-5">
+             <h3 class="font-bold pb-2 text-center">Large Button</h3>
+             <button class="rounded-lg px-8 py-2 text-xl bg-blue-500 text-blue-100 hover:bg-blue-600 duration-300">Large</button>
+             <button class="rounded-lg px-8 py-2 text-xl border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-blue-100 duration-300">Large</button>
+          </div>
+
+          <!-- small button -->
+          <div class="px-5">
+             <h3 class="font-bold pt-4 pb-2 text-center">Small Button</h3>
+             <button class="rounded px-4 py-2 text-xs bg-blue-500 text-blue-100 hover:bg-blue-600 duration-300">Small</button>
+             <button class="rounded px-4 py-2 text-xs border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-blue-100 duration-300">Small</button>
+          </div>
+
+       </div>
+    </div>
+
+    <div class="p-24 bg-purple-700 flex flex-col justify-center items-center">
+       <h3 class="pb-10 font-bold text-4xl text-purple-100">Block Buttons with Grids</h3>
+
+       <!-- buttons with grid -->
+       <div class="w-full grid grid-col-12 gap-y-5 gap-x-2">
+
+          <!-- full width -->
+          <p class="col-span-12 font-bold text-purple-300">Full width</p>
+          <button class="col-span-12 rounded-lg px-4 py-2 bg-green-700 text-green-100 hover:bg-green-800 duration-300">Submit</button>
+
+          <!-- half width -->
+          <p class="col-span-12 font-bold text-purple-300">Half width</p>
+          <button class="col-span-6 rounded-lg px-4 py-2 bg-green-700 text-green-100 hover:bg-green-800 duration-300">Submit</button>
+
+          <!-- grid (left-aligned) -->
+          <p class="col-span-12 font-bold text-purple-300">Grid (Left Aligned)</p>
+          <button class="col-span-2 rounded-lg px-4 py-2 bg-green-700 text-green-100 hover:bg-green-800 duration-300">Submit</button>
+          <button class="col-span-2 rounded-lg px-4 py-2 bg-green-700 text-green-100 hover:bg-green-800 duration-300">Submit</button>
+
+          <!-- right aligned -->
+          <p class="col-span-12 font-bold text-purple-300">Grid (Right Aligned)</p>
+          <button class="col-start-9 col-end-11 rounded-lg px-4 py-2 bg-green-700 text-green-100 hover:bg-green-800 duration-300">Submit</button>
+          <button class="col-start-11 col-end-13 rounded-lg px-4 py-2 bg-green-700 text-green-100 hover:bg-green-800 duration-300">Submit</button>
+       </div>
+    </div>
+
+    <div class="p-24 bg-purple-400 flex flex-col justify-center items-center">
+       <h3 class="pb-10 font-bold text-4xl text-purple-700">Disabled State</h3>
+
+       <!-- disabled states -->
+       <div class="flex space-x-2 space-y-2 flex-wrap justify-center items-baseline">
+          <button class="rounded-lg px-4 py-2 bg-green-700 text-green-100 hover:bg-green-800 duration-300">Submit</button>
+          <button class="rounded-lg px-4 py-2 bg-green-700 text-green-100 opacity-50 cursor-not-allowed didsabled:cursor-not-allowed disabled:opacity-50" disabled>Submit</button>
+       </div>
+
+    </div>
+  </body>
+</html>
