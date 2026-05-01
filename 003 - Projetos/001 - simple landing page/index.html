@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevate - Transforme seu Negócio Digital</title>
+    <meta name="description" content="Soluções digitais completas para escalar o seu negócio.">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configurações personalizadas do Tailwind (Opcional) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0ea5e9', // Sky blue
+                            600: '#0284c7',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-700 bg-white antialiased">
+
+    <!-- HEADER / NAVBAR -->
+    <header class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold text-brand-900 flex items-center gap-2">
+                <svg class="w-8 h-8 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                Elevate
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-8 items-center font-medium">
+                <a href="#recursos" class="hover:text-brand-600 transition">Recursos</a>
+                <a href="#precos" class="hover:text-brand-600 transition">Preços</a>
+                <a href="#faq" class="hover:text-brand-600 transition">FAQ</a>
+                <a href="#" class="px-5 py-2.5 rounded-full bg-brand-600 text-white hover:bg-brand-700 transition shadow-lg hover:shadow-brand-500/30">
+                    Começar Agora
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-900 focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100">
+            <div class="flex flex-col px-6 py-4 space-y-4 font-medium">
+                <a href="#recursos" class="mobile-link hover:text-brand-600">Recursos</a>
+                <a href="#precos" class="mobile-link hover:text-brand-600">Preços</a>
+                <a href="#faq" class="mobile-link hover:text-brand-600">FAQ</a>
+                <a href="#" class="mobile-link text-brand-600 font-bold">Entrar</a>
+                <a href="#" class="px-5 py-3 text-center rounded-lg bg-brand-600 text-white">Começar Agora</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <main class="pt-24">
+        <section class="relative bg-gradient-to-br from-brand-50 via-white to-white py-20 lg:py-32 overflow-hidden">
+            <!-- Background Elements (Abstract blobs) -->
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-brand-100 blur-3xl opacity-50"></div>
+            <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-purple-100 blur-3xl opacity-50"></div>
+
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                    
+                    <!-- Text Content -->
+                    <div class="lg:w-1/2 text-center lg:text-left">
+                        <span class="inline-block py-1 px-3 rounded-full bg-brand-100 text-brand-600 text-sm font-semibold mb-6">
+                            🚀 Novo: Integração com IA 2.0
+                        </span>
+                        <h1 class="text-4xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                            Potencialize seu crescimento <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-purple-600">digitalmente</span>
+                        </h1>
+                        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                            Oferecemos ferramentas e estratégias para que sua empresa atinja o próximo nível. Simples, rápido e eficiente.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                            <a href="#precos" class="px-8 py-4 rounded-lg bg-brand-600 text-white font-bold text-lg hover:bg-brand-700 transition shadow-xl shadow-brand-500/20 transform hover:-translate-y-1">
+                                Começar Teste Grátis
+                            </a>
+                            <a href="#recursos" class="px-8 py-4 rounded-lg bg-white text-gray-700 border border-gray-200 font-bold text-lg hover:bg-gray-50 transition flex items-center justify-center gap-2">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                Ver Demo
+                            </a>
+                        </div>
+                        <p class="mt-4 text-sm text-gray-500">Sem cartão de crédito • Cancelamento a qualquer momento</p>
+                    </div>
+
+                    <!-- Image Content -->
+                    <div class="lg:w-1/2">
+                        <div class="relative rounded-2xl shadow-2xl overflow-hidden border-4 border-white/50">
+                            <!-- Imagem placeholder aleatória mas consistente -->
+                            <img src="https://picsum.photos/seed/techwork/800/600.jpg" alt="Equipe trabalhando" class="w-full h-auto object-cover transform hover:scale-105 transition duration-700">
+                            
+                            <!-- Floating Card (Mockup) -->
+                            <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-lg flex items-center gap-4 animate-bounce" style="animation-duration: 3s;">
+                                <div class="bg-green-100 p-2 rounded-full text-green-600">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </div>
+                                <div>
+                                    <p class="text-xs text-gray-500 font-bold uppercase">Crescimento</p>
+                                    <p class="text-sm font-bold text-gray-900">+150% este mês</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CLIENTS / SOCIAL PROOF -->
+        <section class="py-10 border-b border-gray-100 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <p class="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-6">Empresas que confiam na gente</p>
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition duration-500">
+                    <!-- Logos SVG Simples para demonstração -->
+                    <h3 class="text-xl font-bold text-gray-800">Acme Corp</h3>
+                    <h3 class="text-xl font-bold text-gray-800">GlobalTech</h3>
+                    <h3 class="text-xl font-bold text-gray-800">Nebula</h3>
+                    <h3 class="text-xl font-bold text-gray-800">FoxHub</h3>
+                    <h3 class="text-xl font-bold text-gray-800">Circle</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES SECTION -->
+        <section id="recursos" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Tudo o que você precisa</h2>
+                    <p class="text-gray-600">Nossa plataforma foi desenhada para cobrir todas as necessidades do seu negócio digital, desde o marketing até a análise de dados.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Feature 1 -->
+                    <div class="p-8 rounded-2xl bg-white border border-gray-100 shadow-sm hover-card transition duration-300">
+                        <div class="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-6">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Analytics Avançado</h3>
+                        <p class="text-gray-600">Acompanhe cada clique e conversão com dashboards em tempo real e relatórios detalhados.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="p-8 rounded-2xl bg-white border border-gray-100 shadow-sm hover-card transition duration-300">
+                        <div class="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600 mb-6">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Segurança Total</h3>
+                        <p class="text-gray-600">Seus dados são criptografados de ponta a ponta. Cumprimos as mais rigorosas normas de proteção.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="p-8 rounded-2xl bg-white border border-gray-100 shadow-sm hover-card transition duration-300">
+                        <div class="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 mb-6">
+                            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Ultra Rápido</h3>
+                        <p class="text-gray-600">Otimizado para velocidade. Carregamento instantâneo para não perder nenhum cliente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRICING SECTION -->
+        <section id="precos" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Planos flexíveis</h2>
+                    <p class="text-gray-600">Escolha o plano ideal para o momento atual do seu negócio. Cancele ou altere quando quiser.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                    
+                    <!-- Plan 1 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 hover:border-gray-300 transition">
+                        <h3 class="text-lg font-bold text-gray-900">Starter</h3>
+                        <div class="my-4">
+                            <span class="text-4xl font-extrabold text-gray-900">R$0</span>
+                            <span class="text-gray-500">/mês</span>
+                        </div>
+                        <p class="text-gray-500 mb-6">Para quem está começando a explorar.</p>
+                        <a href="#" class="block w-full py-3 px-4 bg-gray-100 text-gray-800 font-semibold rounded-lg text-center hover:bg-gray-200 transition">Criar conta grátis</a>
+                        <ul class="mt-8 space-y-4 text-sm text-gray-600">
+                            <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 1 Projeto</li>
+                            <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Analytics Básico</li>
+                            <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Suporte por Email</li>
+                        </ul>
+                    </div>
+
+                    <!-- Plan 2 (Popular) -->
+                    <div class="bg-white p-8 rounded-2xl shadow-2xl border-2 border-brand-500 relative transform scale-105 z-10">
+                        <div class="absolute top-0 right-0 left-0 -mt-4 flex justify-center">
+                            <span class="bg-brand-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Mais Popular</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-gray-900">Profissional</h3>
+                        <div class="my-4">
+                            <span class="text-4xl font-extrabold text-gray-900">R$99</span>
+                            <span class="text-gray-500">/mês</span>
+                        </div>
+                        <p class="text-gray-500 mb-6">Para negócios em crescimento.</p>
+                        <a href="#" class="block w-full py-3 px-4 bg-brand-600 text-white font-semibold rounded-lg text-center hover:bg-brand-700 transition shadow-lg shadow-brand-500/30">Assinar Agora</a>
+                        <ul class="mt-8 space-y-4 text-sm text-gray-600">
+                            <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> 10 Projetos</li>
+                            <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Analytics Avançado</li>
+                            <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Suporte Prioritário</li>
+                            <li class="flex items-center gap-2"><svg class="w-5 h-5 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Domínio Grátis</li>
+                        </ul>
+                    </div>
+
+                    <!-- Plan 3 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 hover:border-gray-300 transition">
+                        <h3 class="text-lg font-bold text-gray-900">Enterprise</h3>
+                        <div class="my-4">
+                            <span class="text-4xl font-extrabold text-gray-900">R$299</span>
+                            <span class="text-gray-500">/mês</span>
+                        </div>
+                        <p class="text-gray-500 mb-6">Para grandes operações.</p>
+                        <a href="#" class="block w-full py-3 px-4 bg-gray-100 text-gray-800 font-semibold rounded-lg text-center hover:bg-gray-200 transition">Falar com Vendas</a>
+                        <ul class="mt-8 space-y-4 text-sm text-gray-600">
+                            <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Projetos Ilimitados</li>
+                            <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> IA & Automação</li>
+                            <li class="flex items-center gap-2"><svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Gerente de Conta</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ SECTION -->
+        <section id="faq" class="py-20 bg-white">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Perguntas Frequentes</h2>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-btn w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 flex justify-between items-center focus:outline-none transition">
+                            <span class="font-semibold text-gray-900">Preciso de cartão de crédito para testar?</span>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="faq-answer bg-white px-6 border-t border-gray-100">
+                            <div class="py-4 text-gray-600">
+                                Não! Você pode começar seu teste gratuito de 14 dias sem cadastrar nenhum cartão de crédito. Basta criar sua conta e começar a usar.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-btn w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 flex justify-between items-center focus:outline-none transition">
+                            <span class="font-semibold text-gray-900">Posso cancelar a qualquer momento?</span>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="faq-answer bg-white px-6 border-t border-gray-100">
+                            <div class="py-4 text-gray-600">
+                                Sim, não temos contratos de fidelidade. Você pode cancelar sua assinatura a qualquer momento diretamente no painel de configurações.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <button class="faq-btn w-full px-6 py-4 text-left bg-gray-50 hover:bg-gray-100 flex justify-between items-center focus:outline-none transition">
+                            <span class="font-semibold text-gray-900">Vocês oferecem suporte técnico?</span>
+                            <svg class="w-5 h-5 text-gray-500 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </button>
+                        <div class="faq-answer bg-white px-6 border-t border-gray-100">
+                            <div class="py-4 text-gray-600">
+                                Sim, oferecemos suporte via chat e email para todos os planos. O plano Enterprise inclui suporte telefônico dedicado 24/7.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA FINAL -->
+        <section class="py-20 bg-brand-900">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Pronto para elevar seu negócio?</h2>
+                <p class="text-brand-100 mb-8 max-w-2xl mx-auto">Junte-se a mais de 10.000 empresas que já estão transformando seus resultados com a Elevate.</p>
+                <a href="#" class="inline-block px-8 py-4 rounded-lg bg-white text-brand-900 font-bold text-lg hover:bg-brand-50 transition shadow-xl">
+                    Começar Jornada Gratuita
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-1">
+                    <a href="#" class="text-2xl font-bold text-white flex items-center gap-2 mb-4">
+                        <svg class="w-8 h-8 text-brand-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        Elevate
+                    </a>
+                    <p class="text-sm text-gray-400">Facilitando a transformação digital para empresas de todos os tamanhos.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Produto</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Recursos</a></li>
+                        <li><a href="#" class="hover:text-white transition">Integrações</a></li>
+                        <li><a href="#" class="hover:text-white transition">Preços</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Empresa</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Sobre Nós</a></li>
+                        <li><a href="#" class="hover:text-white transition">Carreiras</a></li>
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Privacidade</a></li>
+                        <li><a href="#" class="hover:text-white transition">Termos de Uso</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+                <p>&copy; 2023 Elevate Digital. Todos os direitos reservados.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Instagram</a>
+                    <a href="#" class="hover:text-white transition">Twitter</a>
+                    <a href="#" class="hover:text-white transition">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script src="script.js"></script>
+</body>
+</html>
